@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    background: var(--cream);
+    padding-top: 20px;
+    font-family: "Montserrat";
+    margin: auto;
+}
+
+.container{
+    background: var(--white);
+    margin: auto;
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+
+.container header .logo  picture img{
+    border-radius: 10px 0 0 10px;
+}
+
+.container main{
+    padding: 40px;
+}
+
+
+.container main h1{
+    color: var(--dark-grayish-blue);
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.container main h2{
+    font-family: "Fraunces";
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.container main .text{
+    font-size: 18px;
+    color: var(--very-dark-blue);
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.container main .prices{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container main .prices .price1{
+    font-family: "Fraunces";
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--dark-cyan);
+}
+
+.container main .prices .price2{      
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 20px;
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+}
+
+.container main .car button{
+    margin-top: 40px;
+    width: 100%;
+    padding: 10px 0;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--dark-cyan);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.container main .car button:hover{
+    background: var(--very-dark-blue);
+    cursor: pointer;
+}
+
+
+.attribution footer{
+    font-size: 15px;
+    display: flex;    
+    justify-content: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media screen and (max-width:800px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container header{
+        width: 100%;
+    }
+
+    .container header .logo{
+        width: 100%;
+    }
+
+    .container header .logo picture{
+        width: 100%;
+    }
+
+    .container header .logo  picture img{
+        width: 100%;
+        vertical-align: top;        
+        border-radius: 15px 15px 0 0 ;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    body{
+        background: var(--cream);
+    }
+    .container{
+        width: 90%;
+        margin: auto;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+    }
+
+    .container header{
+        width: 100%;
+    }
+    
+    .container header .logo{
+        width: 100%;
+    }
+
+    .container header .logo picture{
+        width: 100%;
+    }
+
+
+    .container header .logo  picture img{
+        width: 100%;        
+        border-radius: 15px 15px 0 0 ;
+    }
+
+    .container main {
+        margin: 10px 20px;
+    }
+
+    .container main h1{
+        font-size: 11px;
+        color: var(--dark-grayish-blue);
+        letter-spacing: 4px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    .container main h2{
+        font-family: "Fraunces";
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .container main .text{
+        font-size: 14px;
+        color: var(--dark-grayish-blue);
+        margin-bottom: 10px;
+    }
+
+    .container main .prices{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container main .prices .price1{
+        font-family: "Fraunces";
+        font-size: 25px;
+        font-weight: 700;
+        color: var(--dark-cyan);
+    }
+
+    .container main .prices .price2{      
+        font-size: 12px;
+        margin-top: 8px;
+        margin-left: 20px;
+        text-decoration: line-through;
+        color: var(--dark-grayish-blue);
+    }
+
+    .container main .car{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .container main .car button{
+        width: 90%;
+        padding: 10px 0;
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--white);
+        background: var(--dark-cyan);
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .container main .car button:hover{
+        background: var(--very-dark-blue);
+        cursor: pointer;
+    }
+}
